@@ -8,7 +8,6 @@ let htmlSelectors = {
     'result-final': document.querySelector('.calc-result--final'),
     'result-progress': document.querySelector('.calc-result--progress')
 }
-// TODO: Да се инициализират нужните променливи
 let firstOperand = '';
 let secondOperand = '';
 let operator = '';
@@ -48,7 +47,6 @@ function operandClickListenerHandler(e) {
 		resultFinalDiv.textContent = secondOperand;
 	}
 
-    // TODO: Да се допише функцията ***
 }
 
 function operatorClickListenerHandler(e) {
@@ -71,7 +69,6 @@ function operatorClickListenerHandler(e) {
 	resultProgressDiv.textContent = firstOperand + operator;
 	firstIsSelected = true;
 }
-    // TODO: Да се допише функцията ***
 
 
 function decimalPointClickListenerHandler() {
@@ -88,7 +85,6 @@ function decimalPointClickListenerHandler() {
 			resultFinalDiv.textContent = secondOperand;
 		}
 	}
-    // TODO: Да се допише функцията ***
 }
 
 function removeSymbolClickListenerHandler() {
@@ -122,8 +118,6 @@ function removeSymbolClickListenerHandler() {
 			finalResultDiv.textContent = firstOperand;
 		}
 	}
-
-    // TODO: Да се допише функцията
 }
 
 function equalsClickListenerHandler() {
@@ -156,8 +150,6 @@ function equalsClickListenerHandler() {
 			resultFinalDiv.textContent = result.toFixed(2);
 		}
 	}
-
-    // TODO: Да се допише функцията
 }
 
 function resetClickListenerHandler() {
@@ -171,6 +163,4 @@ function resetClickListenerHandler() {
 	
 	resultFinalDiv.textContent = 0;
 	resultProgressDiv.textContent = 0;
-
-    // TODO: Да се допише функцията
 }
